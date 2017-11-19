@@ -65,6 +65,7 @@ function User(user, email){
               });
       });
 
+
     //iterates through our people thing
         function submit(){
            var emails = $("[name='email']");
@@ -90,6 +91,27 @@ function User(user, email){
   $('.js-scroll-trigger').click(function() {
     $("#sidebar-wrapper").removeClass("active");
   });
+
+//clock countdown
+    var clock;
+
+    $(document).ready(function() {
+
+      // Grab the current date
+      var currentDate = new Date();
+
+      // Set some date in the future. In this case, it's always Jan 1
+      var futureDate  = new Date(currentDate.getFullYear() + 0, 11, 25);
+
+      // Calculate the difference in seconds between the future and current date
+      var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+      // Instantiate a coutdown FlipClock
+      clock = $('.clock').FlipClock(diff, {
+        clockFace: 'DailyCounter',
+        countdown: true
+      });
+    });
 
   //#to-top button appears after scrolling
   var fixed = false;

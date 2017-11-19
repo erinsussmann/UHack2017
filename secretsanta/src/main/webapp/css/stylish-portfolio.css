@@ -33,6 +33,9 @@ body {
   margin-left: 10px;
   color: #000;
 }
+.textmiddle {
+  font-style: oblique;
+}
 
 /* title*/
 
@@ -46,7 +49,7 @@ body {
 
 
 .bg-primary {
-  background-color: #e2c261 ;
+  color: #e2c261 ;
 }
 
 .form-control {
@@ -83,7 +86,10 @@ body {
   color: #333;
   background-color: rgba(255, 255, 255, .8);
 }
-
+.btn-primary {
+  background-color: #333;
+  border: none;
+}
 
 /* Custom Horizontal Rule */
 
@@ -141,8 +147,9 @@ hr.small {
 }
 
 .sidebar-nav>.sidebar-brand {
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 20px;
+  font-style: bold;
+  line-height: auto;
   height: 55px;
   margin: 10px;
 }

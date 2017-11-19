@@ -77,37 +77,37 @@ public class EmailServlet extends HttpServlet {
        for(int i = 0; i< user.size(); i++){
            sendEmail(user.get(i), user.get(i).getSecretSanta());
        }
-    
+
     }
-    
+
     private static void sendEmail(User giver, User reciever){
-        
-        
+
+
          Email from = new Email("admin@secretsanta-186421.appspotmail.com");
     String subject = "Your Secret Santa";
     Email to = new Email(giver.getEmail());
     String giverEmail = giver.getEmail();
        String giverName = giver.getName();
        String recieverName = reciever.getName();
-    Content content = new Content("text/plain", "Hello" + giverName + ", \n Your Secret Santa is " + recieverName + ".\n Thank you, \n Santa's Elves.");
+    Content content = new Content("text/plain", "Hello " + giverName + ", \n Your Secret Santa is " + recieverName + ".\n Thank you, \n Santa's Elves.");
     Mail mail = new Mail(from, subject, to, content);
 
     SendGrid sg = new SendGrid(EMAIL_KEY);
     Request request = new Request();
-    
+
     //-------------------------------------
     try {
-        
+
         request.setMethod(Method.POST);
       request.setEndpoint("mail/send");
       request.setBody(mail.build());
       Response response = sg.api(request);
-      
+
       //----------
-    
+
     }   catch (IOException ex) {
               log.severe(ex.getMessage());
         }
-       
+
     }
 }
