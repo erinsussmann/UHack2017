@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title class="title">Secret Santa Service</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/flipclock.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+      <i class="fa fa-snowflake-o fa-2x"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn pull-right btn-light toggle"> <!--btn-light btn-lg pull-right toggle-->
+          <i class="fa fa-tint fa-2x"></i>
+        </a>
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#top">Home</a>
+        </li>
+
+        <li>
+          <a class="js-scroll-trigger" href="#about">Countdown to Christmas</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="text-vertical-left">
+        <h1>Secret Santa Service</h1>
+        <h3>The only service for your secret santa needs.</h3>
+
+        <br>
+      </div>
+
+
+<!-- adding a person button -->
+
+<div class="container">
+	<div class="row">
+		<input type="hidden" name="count" value="1" />
+        <div class="control-group" id="fields">
+
+            <div class="controls" id="profs">
+
+                  <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group" style="display: inline">
+                      <div id="field1" class="form-group floating-label-form-group controls buttonstyle">
+                        <input class="form-control" name="name" type="text" placeholder="Name" required data-validation-required-message="Please enter your name.">
+                        <input class="form-control" name ="email" type="email" placeholder="Email Address" required data-validation-required-message="Please enter your email address.">
+
+
+
+                    </div>
+                    <button id="b1" class="btn add-more" type="button" style="display: inline">+</button>
+                    </div>
+                </form>
+                <button id="sendBtn" type="button" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+	</div>
+</div>
+
+
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container text-center">
+        <!-- countdown clock-->
+              <div class="clock">
+              </div>
+              <h2 class="textmiddle">Countdown to Christmas 2017</h2>
+              <p class="fa fa-tree fa-2x"></p>
+              <br></br>
+              <br></br>
+              <p class="text-muted">Copyright &copy; TheRealWineMoms 2017</p>
+      </div>
+      <!-- /.container-->
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
+    <script src="js/flipclock.js"></script>
+  </body>
+
+</html>

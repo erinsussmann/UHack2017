@@ -1,0 +1,6 @@
+uhack\model\Group.class
+uhack\model\User.class
+uhack\service\PairUp.class
+uhack\GuestbookServlet.class
+uhack\service\EmailServlet.class
+uhack\service\JSONObect.class
